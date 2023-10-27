@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Loginpage">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="30dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/backgroundshape"
+        app:cardBackgroundColor="#34536A"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+
+        <ImageView
+            android:id="@+id/ssimg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="-20dp"
+            android:paddingHorizontal="0dp"
+            android:src="@drawable/img_6"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/signedin"
+            android:layout_width="213dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:text="Let's get you signed in!"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold|italic" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="420dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/white"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/switchsolider"
+            android:padding="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lnkregsrt"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="169dp"
+            android:layout_weight="0"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp"
+            android:text="@string/register"
+            android:textAlignment="center"
+            android:textColor="@color/btnclr"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:ignore="ExtraText" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+      android:textColorHint="#3E3B3B"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/etbtns"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_email"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/etbtns"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="#3E3B3B"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/forgrt1"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_below="@+id/et_password"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="78dp"
+        android:minHeight="48dp"
+        android:text="Forget possword?"
+        android:textColor="#F34813"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="373dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/et_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#172247"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="normal"/>
+    <ProgressBar
+        android:id="@+id/progressbarlog"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/txtlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="____________ Or login with  ____________" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txtlog">
+
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btn_login"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/fbgbag"
+        android:padding="10dp"
+        android:src="@drawable/img" />
+
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btn_login"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+
+        android:background="@drawable/fbgbag"
+        android:src="@drawable/googleimg" />
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/btn_login"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/fbgbag"
+            android:padding="10dp"
+            android:src="@drawable/insta" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtlog"
+        android:layout_marginTop="120dp"
+      android:layout_marginStart="50dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Already you have an accounted?"
+        android:textColor="@color/btnclr" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtlog"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="230dp"
+        android:text="Register Now"
+        android:textColor="#E63011"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
+

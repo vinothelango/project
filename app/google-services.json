@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "493261789580",
+    "project_id": "cavosh-app",
+    "storage_bucket": "cavosh-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493261789580:android:f649d6f12532d7f658dea9",
+        "android_client_info": {
+          "package_name": "com.example.cavosh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493261789580-8cche17idjpss39vgiia8af7kqmg6boj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSRBQKgmhcw0uhQ0PoaT7mWanrU7RlLj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493261789580-8cche17idjpss39vgiia8af7kqmg6boj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493261789580:android:3c13c48c4a3f4e7d58dea9",
+        "android_client_info": {
+          "package_name": "com.example.cavoshapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493261789580-8cche17idjpss39vgiia8af7kqmg6boj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSRBQKgmhcw0uhQ0PoaT7mWanrU7RlLj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493261789580-8cche17idjpss39vgiia8af7kqmg6boj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

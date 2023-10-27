@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34536A"
+    tools:context=".Splashscreen">
+
+    <ImageView
+        android:id="@+id/ssimg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="-20dp"
+        android:paddingHorizontal="0dp"
+        android:src="@drawable/img_6"/>
+
+    <ImageView
+        android:id="@+id/ssimg"
+        android:layout_width="match_parent"
+        android:layout_height="288dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:layout_marginTop="164dp"
+        android:paddingHorizontal="0dp"
+        android:src="@drawable/img_8" />
+
+    <TextView
+        android:id="@+id/sstxt1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="445dp"
+    android:layout_centerHorizontal="true"
+    android:text="Welcome to"
+    android:textSize="28sp"
+    android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/nameapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cavosh"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="483dp"
+        android:textColor="#F36A3F"/>
+
+    <Button
+        android:id="@+id/ssbtn"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/nameapp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/btnclr"
+        android:shadowColor="#0A0D1C"
+        android:text="Get Started" />
+
+</RelativeLayout>
